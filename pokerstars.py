@@ -36,7 +36,6 @@ def parseHH( handID ):
 	for index in range(startLine, len(historyLines)):
 		players.extend(re.findall(r'(Seat .+ in chips\))', historyLines[index]))
 
-
  		#work out stacks after all preflop betting
 		if action:
 			if not removedBlinds:
